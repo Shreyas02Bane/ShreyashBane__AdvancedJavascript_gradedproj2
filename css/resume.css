@@ -1,0 +1,61 @@
+.resume-container {
+    margin: 10px;
+}
+
+.resume-header {
+    text-align: center;
+    background-color: aqua;
+}
+
+#name {
+    padding-top: 50px;
+    margin: 0;
+}
+.appliedFor {
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.resume-columns {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 10px;
+    grid-gap: 50px;
+}
+
+.col-1 {
+    background-color: lightpink;
+    padding: 10px;
+}
+
+.col-1-heading {
+    background-color: darkgray;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+}
+#search-result-area {
+    text-align: center;
+}
+
+#search-results {
+    list-style-type: none;
+}
+
+.search-bar-area {
+    text-align: center;
+    margin: auto;
+}
+
+#searchbar {
+    width: 400px;
+}
+
+.resume-container {
+    border: 2px solid black;
+}
+
+.resume-display-area {
+    display: inline;
+}

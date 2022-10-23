@@ -1,0 +1,111 @@
+<html lang="en">
+    <head>
+        <title>Resume Search</title></head>
+        <link rel="stylesheet" href="css/resume.css">
+    <body>
+        <div class="search-bar-area">
+            <button id="prev-btn" onclick="handlePrev()">Prev</button>
+            <label>
+                <input id="searchbar" oninput="updateAfterSearch()" placeholder="Search for keywords to filter the results" >
+            </label>
+            <button id="next-btn" onclick="handleNext()">Next</button>
+        </div>
+
+        <div id="search-result-area">
+            <ul id="search-results">
+            </ul>
+        </div>
+        <div class="resume-container">
+            <div id="resume-display-area">
+                <div class="resume-header">
+                    <h2 id="name"></h2>
+                    <div class="appliedFor">Applied For: <span id="appliedFor"></span> </div>
+                </div>
+                <div class="resume-columns">
+                    <div class="col-1">
+                        <section class="resume-body">
+                            <h3 class="col-1-heading">Personal Information</h3>
+                            <div id="mobile-number"></div>
+                            <div id="email"></div>
+                            <div id="linkedin"></div>
+                        </section>
+                        <section class="resume-body">
+                            <h3 class="col-1-heading">Technical Skills</h3>
+                            <div id="tech-skills"></div>
+                        </section>
+                        <section class="resume-body">
+                            <h3 class="col-1-heading">Hobbies</h3>
+                            <div id="hobbies"></div>
+                        </section>
+                    </div>
+                    <div>
+                    <section class="resume-body">
+                        <h3>Work Experience in previous company</h3>
+                        <div>
+                            <p>
+                                <b> Company Name:</b> <span id="prev-company-name"></span>
+                            </p>
+                            <p>
+                                <b> Position:</b> <span id="prev-company-position"></span>
+                            </p>
+                            <p>
+                                <b> Start Date:</b> <span id="prev-company-start-date"></span>
+                            </p>
+                            <p>
+                                <b> End Date:</b> <span id="prev-company-end-date"></span>
+                            </p>
+                            <p>
+                                <b> Summary:</b> <span id="prev-company-summary"></span>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="resume-body">
+                        <h3>Projects</h3>
+                        <div id="project-details"></div>
+                    </section>
+                    <section class="resume-body">
+                        <h3>Education</h3>
+                        <ul id="education-details">
+                            <li>
+                                <p><b>UG: </b> <span id="ug"></span></p>
+                            </li>
+                             <li>
+                                <p><b>Senior Secondary: </b> <span id="senior-secondary"></span></p>
+                            </li>
+                            <li>
+                                <p><b>High School: </b> <span id="high-school"></span></p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="resume-body">
+                        <h3>Internship</h3>
+                        <ul>
+                            <li >
+                                <b> Company Name:</b> <span id="internship-name"></span>
+                            </li>
+                            <li>
+                                <b> Position:</b> <span id="internship-position"></span>
+                            </li>
+                            <li>
+                                <b> Start Date:</b> <span id="internship-start-date"></span>
+                            </li>
+                            <li>
+                                <b> End Date:</b> <span id="internship-end-date"></span>
+                            </li>
+                            <li>
+                                <b> Summary:</b> <span id="internship-summary"></span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="resume-body">
+                        <h3>Achievements</h3>
+                        <ul id="achievements"></ul>
+                    </section>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/resume.js"></script>
+    </body>
+</html>
